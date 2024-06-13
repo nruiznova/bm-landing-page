@@ -1,0 +1,960 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <title>Brock Mountain</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Template by CocoBasic" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
+        <meta name="author" content="CocoBasic" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <link rel="shortcut icon" href="images/Favicon.png" />    
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:300i,400,600' rel='stylesheet' type='text/css'>	
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href='css/common.css' />
+        <link rel="stylesheet" type="text/css" href='css/font-awesome.min.css' />
+        <link rel="stylesheet" type="text/css" href='css/slick.css' />
+        <link rel="stylesheet" type="text/css" href='css/prettyPhoto.css' />
+        <link rel="stylesheet" type="text/css" href='css/sm-clean.css' /> 
+        <link href="style.css" rel="stylesheet">   
+        <!-- <link href="https://html.hixstudio.net/portx-demo/portx/assets/scss/layout/pages/_project.scss" rel="stylesheet"/>      -->
+
+        <!--[if lt IE 9]>
+                <script src="js/html5.js"></script>            
+                <script src="js/respond.min.js"></script>    
+        <![endif]-->
+
+    </head>
+    <body>
+
+        <style>
+
+            .tp-project-icon a {
+                text-align: center;
+            }
+
+            .p-relative {
+                position: relative;
+            }
+            .tp-project-box {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: #fff;
+                padding: 20px 18px;
+                width: 100%;
+                border-bottom: 10px solid #f8f5f1;
+                padding-right: 75px;
+                clip-path: polygon(0 0, 83% 0, 92% 100%, 0% 100%);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                transition: 0.4s;
+            }
+            /* .tp-project-box {
+               
+            } */
+            .tp-project-info span {
+                color: #9898a0;
+                font-size: 14px;
+                font-weight: 700;
+                z-index: 1;
+                position: relative;
+            }
+            .tp-project-icon a::before{
+                position: absolute;
+                content: "";
+                top: 0;
+                right: 40px;
+                height: 101%;
+                width: 80px;
+                background: #f8f5f1;
+                transform: skew(16deg);
+                transition: 0.4s;
+            }
+
+            .tp-project-icon a i {
+                color: #2b5c3f;
+                position: relative;
+                z-index: 999;
+                font-size: 22px;
+                margin-left: 13px;
+            }
+
+            .tp-project-item:hover{
+
+                .tp-project-box {
+                    border-color: #78ad3c;
+                }  
+               .tp-project-thumb::before {
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+               /* .tp-project-content {
+                    background-color: #78ad3c;
+                } */
+
+               .tp-project-icon a {
+                    color: #2b5c3f;
+                }
+
+               .tp-project-icon a i {
+                    color: #2b5c3f;                                        
+                }
+                .tp-project-icon a::before {
+                        background-color: #78ad3c;
+                    }
+
+               .tp-project-box {
+                    border-color: #78ad3c;
+                }   
+                
+                .tp-project-item{
+                    overflow: hidden;        
+                }     
+                
+                .tp-project-item{
+                    overflow: hidden;        
+                }
+                
+                .tp-project-item::before {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    opacity: .80;
+                    background-image: -moz-linear-gradient(90deg, rgb(202, 31, 38) 0%, rgb(229, 111, 52) 54%, rgb(255, 191, 66) 100%);
+                    background-image: -webkit-linear-gradient(90deg, rgb(202, 31, 38) 0%, rgb(229, 111, 52) 54%, rgb(255, 191, 66) 100%);
+                    background-image: -ms-linear-gradient(90deg, rgb(202, 31, 38) 0%, rgb(229, 111, 52) 54%, rgb(255, 191, 66) 100%);
+                    -webkit-transform: perspective(400px) rotateX(90deg) scaleY(0.5);
+                    -ms-transform: perspective(400px) rotateX(90deg) scaleY(0.5);
+                    transform: perspective(400px) rotateX(90deg) scaleY(0.5);
+                    -webkit-transform-origin: center;
+                    -ms-transform-origin: center;
+                    transform-origin: center;
+                    transition-delay: 0.1s;
+                    transition-timing-function: ease-in-out;
+                    transition-duration: 0.4s;
+                    transition-property: all;
+                    z-index: 2;
+                }
+
+                .tp-project-item::after {
+                    content: '';
+                    position: absolute;
+                    background: linear-gradient(to top, #3a3a4a, transparent);
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 70%;
+                    z-index: 1;
+                }
+
+            }               
+           
+            .tp-project-thumb::before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient(to top, #2b5c3f, transparent);
+                content: "";
+                border-radius: 5px;
+                opacity: 0;
+                visibility: hidden;
+                transition: .4s;
+            }
+
+            .tp-project-content{
+                display: flex; 
+                align-items: center;
+            }
+            
+            .tp-project-titile-1{
+                margin-bottom: 7px;
+            }
+
+            .project-logo img{
+                width: 70px;
+                margin-right: 20px;
+            }
+
+            .project-logo #img1{
+                width: 60px;               
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+
+            .project-logo #img3{
+                width: 80px; 
+                margin-right: 10px;                              
+            }
+            
+        </style>
+
+        <!-- Preloader Gif -->
+        <div class="doc-loader">                        
+            <img src="images/logo_negativo.png" alt="Loading..." />            
+        </div>
+
+        <!-- Menu -->
+        <div class="menu-wrapper center-relative">	
+            <nav id="header-main-menu">
+                <img class="menu-logo" src="images/logo_negativo.png" alt="Bacchus">
+                <div class="mob-menu">MENU</div>
+                <ul class="main-menu sm sm-clean">
+                    <li><a target="_blank" href="https://brockmlc.com/">BMLC</a></li>
+                    <li><a target="_blank" href="https://brockmountainhomes.com/">BM Homes</a></li>
+                    <li><a href="#">BM Federal</a></li>
+                    <!-- <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li> -->
+                    <!-- <li><a href="#portfolio">Portfolio</a></li>                    
+                    <li><a href="#news">News</a></li>  
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#focus">Focus</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#team">Team</a></li> -->
+                    <!-- <li><a href="#contact">Contact</a></li>-->
+                </ul>
+            </nav>            
+        </div>    
+
+
+        <!-- HOME SECTION -->
+
+        <div id="home" class="section" style="display: none;">
+            <div class="box-wrapper">                                                                                             
+                <div class="container-fluid">  
+                    <div class="row no-gutter"> 
+                        <div class="col-md-12">      
+                            <script>
+                                var slider1_speed = "2000";
+                                var slider1_auto = "true";
+                                var slider1_hover = "false";
+                            </script>
+
+                            <div class="image-slider-wrapper relative slider1">
+                                <div id="slider1" class="image-slider slider">
+                                    <div>
+                                        <img src="images/Header.jpg" alt="" width="100%" height="30%"> 
+                                    </div>
+                                    <!-- <div>
+                                        <img src="images/hero_img_02.jpg" alt="">    
+                                    </div>
+                                    <div>
+                                        <img src="images/hero_img_03.jpg" alt=""> 
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+
+        <!-- SERVICE SECTION -->
+
+        <div id="services" class="section">
+            <div class="box-wrapper">                                                
+                <div class="grid">  
+                    <div class="grid-sizer"></div>                                              
+                    <!-- <div class="container-fluid">  
+                        <div class="row no-gutter">  -->
+                           <div class="grid-item element-item p_1x1" style="border-right: 4px solid white;">
+                            <div class="tp-project-item p-relative">
+                                <div class="tp-project-thumb ">
+                                   <img class="w-100" src="images/bmlc_banner.jpg" alt="">
+                                </div>
+                                <div class="tp-project-box">
+                                   <div class="tp-project-content">
+                                    <div class="project-logo">
+                                        <img id="img1" src="images/Logo BMLC s.png">
+                                    </div>
+                                      <div class="tp-project-info">                                         
+                                         <h4 class="tp-project-titile-1">                                            
+                                            <a target="_blank" href="https://brockmlc.com/">BMLC</a>
+                                        </h4>
+                                         <span id="span1">WEBSITE</span>
+                                      </div>
+                                   </div>
+                                   <div class="tp-project-icon">
+                                      <a target="_blank" href="https://brockmlc.com/">
+                                        <i class="fa fa-arrow-right"></i>
+                                      </a>
+                                   </div>
+                                </div>
+                             </div>
+                           </div>
+                           <div class="grid-item element-item p_1x1" style="border-right: 2px solid white; border-left: 2px solid white;">
+                            <div class="tp-project-item p-relative">
+                                <div class="tp-project-thumb ">
+                                   <img class="w-100" src="images/homes_banner.jpg" alt="">
+                                </div>
+                                <div class="tp-project-box">
+                                   <div class="tp-project-content">
+                                        <div class="project-logo">
+                                            <img id="img2" src="images/Logo BM Homes POSITIVE.png">
+                                        </div>
+                                        <div class="tp-project-info">                                         
+                                            <h4 class="tp-project-titile-1">                                               
+                                                <a target="_blank" href="https://brockmountainhomes.com/" >BM HOMES</a>
+                                            </h4>
+                                            <span id="span2">WEBSITE</span>
+                                        </div>
+                                   </div>
+                                   <div class="tp-project-icon">
+                                      <a target="_blank" href="https://brockmountainhomes.com/">
+                                        <i class="fa fa-arrow-right"></i>
+                                      </a>
+                                   </div>
+                                </div>
+                             </div>
+                           </div>
+                           <div class="grid-item element-item p_1x1" style="border-left: 4px solid white;">
+                            <div class="tp-project-item p-relative">
+                                <div class="tp-project-thumb ">
+                                   <img class="w-100" src="images/federal_banner.jpg" alt="">
+                                </div>
+                                <div class="tp-project-box">
+                                   <div class="tp-project-content">
+                                        <div class="project-logo">
+                                            <img id="img3" src="images/Alt Logo.png">
+                                        </div>
+                                        <div class="tp-project-info ">                                         
+                                            <h4 class="tp-project-titile-1">                                            
+                                                <a target="_blank" href="https://brockmountainhomes.com/">BM FEDERAL</a>
+                                            </h4>
+                                            <span id="span3">WEBSITE</span>
+                                        </div>
+                                   </div>
+                                   <div class="tp-project-icon">
+                                      <a target="_blank" href="https://brockmountainhomes.com/">
+                                        <i class="fa fa-arrow-right"></i>
+                                      </a>
+                                   </div>
+                                </div>
+                             </div>
+                           </div>
+                        <!-- </div>
+                    </div>                                           -->
+                </div>
+            </div>
+        </div>
+
+
+        <!-- PORTFOLIO SECTION -->
+
+        <div id="portfolio" class="section" style="display: none;">                                
+            <div class="box-wrapper">                                                                                                      
+                <div class="grid" id="portfolio-grid">
+                    <div class="grid-sizer"></div>
+                    <div class="grid-item element-item p_2x2">
+                        <a data-rel="prettyPhoto[gallery1]" href="https://vimeo.com/157276599">
+                            <img src="images/portfolio_item_01.jpg" alt="">
+                            <div class="portfolio-text-holder">
+                                <div class="portfolio-text-wrapper">
+                                    <p class="portfolio-type">
+                                        <img src="images/icon_play@2x.png" alt="">
+                                    </p>                               
+                                    <p class="portfolio-text">VIDEO</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-item element-item p_1x1">
+                        <a data-rel="prettyPhoto[gallery1]" href="images/portfolio_item_02_large.jpg">
+                            <img src="images/portfolio_item_02.jpg" alt="">
+                            <div class="portfolio-text-holder">
+                                <div class="portfolio-text-wrapper">
+                                    <p class="portfolio-type">
+                                        <img src="images/icon_view@2x.png" alt="">
+                                    </p>                               
+                                    <p class="portfolio-text">IMAGE</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-item element-item p_1x1">
+                        <a href="single.html">
+                            <img src="images/portfolio_item_03.jpg" alt="">
+                            <div class="portfolio-text-holder">
+                                <div class="portfolio-text-wrapper">
+                                    <p class="portfolio-type">
+                                        <img src="images/icon_post@2x.png" alt="">
+                                    </p>                               
+                                    <p class="portfolio-text">TEXT</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-item element-item p_1x1">
+                        <a href="http://cocobasic.com" target="_blank">
+                            <img src="images/portfolio_item_04.jpg" alt="">
+                            <div class="portfolio-text-holder">
+                                <div class="portfolio-text-wrapper">
+                                    <p class="portfolio-type">
+                                        <img src="images/icon_external@2x.png" alt="">
+                                    </p>                               
+                                    <p class="portfolio-text">LINK</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-item element-item p_1x1">
+                        <a href="single.html">
+                            <img src="images/portfolio_item_05.jpg" alt="">
+                            <div class="portfolio-text-holder">
+                                <div class="portfolio-text-wrapper">
+                                    <p class="portfolio-type">
+                                        <img src="images/icon_post@2x.png" alt="">
+                                    </p>     
+                                    <p class="portfolio-text">TEXT</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-item element-item p_1x1">
+                        <a data-rel="prettyPhoto[gallery1]" href="images/portfolio_item_06_large.jpg">
+                            <img src="images/portfolio_item_06.jpg" alt="">
+                            <div class="portfolio-text-holder">
+                                <div class="portfolio-text-wrapper">
+                                    <p class="portfolio-type">
+                                        <img src="images/icon_view@2x.png" alt="">
+                                    </p>   
+                                    <p class="portfolio-text">IMAGE</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="clear"></div>                          
+                </div>
+                <div class="content-980">                                                
+                    <div class="process-holder">
+                        <div class="process animate">
+                            <span>1</span>
+                            <span>/</span>
+                            <span>3</span>
+                            <p class="process-txt">Explore & Collect Information</p>
+                        </div>
+                        <div class="separator animate"></div>
+                        <div class="process animate wait-03s">
+                            <span>2</span>
+                            <span>/</span>
+                            <span>3</span>
+                            <p class="process-txt">Explore & Collect Information</p>
+                        </div>
+                        <div class="separator animate wait-03s"></div>
+                        <div class="process animate wait-06s">
+                            <span>3</span>
+                            <span>/</span>
+                            <span>3</span>
+                            <p class="process-txt">Explore & Collect Information</p>
+                        </div>
+                    </div>
+                </div>
+            </div>                    
+        </div>            
+
+
+        <!-- NEWS SECTION -->
+
+        <div id="news" class="section" style="display: none;">                                
+            <div class="box-wrapper">                                                                                              
+                <div class="container-fluid">  
+                    <div class="row no-gutter news-holder"> 
+                        <div class="col-sm-12 col-md-12 post post-1">                            
+                            <p class="category">INSPIRATIONAL</p>
+                            <h2 class="entry-title">Time is on Our Side</h2>   
+                            <p class="excerpt">Talent she for lively eat led sister. Entrance strongly packages she out rendered get quitting denoting led. Dwelling confined improved it he no doubtful raptures.</p>
+                            <a class="read-more" href="single.html">Read More</a>
+                        </div>
+                        <div class="col-sm-12 col-md-12 post post-2">                            
+                            <p class="category">THOUGHTS</p>
+                            <h2 class="entry-title">Hello to my Second Post</h2>   
+                            <p class="excerpt">Smile spoke total few great had never their too. Amongst moments do in arrived at my replied. Fat weddings servants but man believed prospect.</p>
+                            <a class="read-more" href="single.html">Read More</a>
+                        </div>
+                        <div class="col-sm-12 col-md-12 post post-2">                            
+                            <p class="category">THOUGHTS</p>
+                            <h2 class="entry-title">Hello to my Second Post</h2>   
+                            <p class="excerpt">Smile spoke total few great had never their too. Amongst moments do in arrived at my replied. Fat weddings servants but man believed prospect.</p>
+                            <a class="read-more" href="single.html">Read More</a>
+                        </div>
+                    </div>
+                </div>                                         
+            </div>
+        </div>
+
+
+        <!-- SUPPORT SECTION -->
+
+        <div id="support" class="section" style="display: none;">                                
+            <div class="box-wrapper">                                                                                              
+                <div class="container-fluid">  
+                    <div class="row no-gutter"> 
+                        <div class="col-md-6 offset-md-6">
+                            <div class="quote">
+                                <h2 class="entry-title animate">The art and science of asking questions is the source of all knowledge</h2>                               
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="row no-gutter"> 
+                        <div class="col-md-9 offset-md-3 support-service">                                                                                
+                            <div class="row no-gutter">                                          
+                                <div class="col-sm-2 text-center animate wait-03s"> 
+                                    <img class="support-img" src="images/icon_photo@2x.png" alt="Photo Sessions">
+                                    <p class="support-item-text">Photo Sessions</p>
+                                </div>
+                                <div class="col-sm-2 offset-sm-3 text-center animate wait-03s">                                                                 
+                                    <img class="support-img" src="images/icon_support@2x.png" alt="24/7 Support">
+                                    <p class="support-item-text">24/7 Support</p>
+                                </div>
+                                <div class="col-sm-2 offset-sm-3 text-center animate wait-03s">
+                                    <img class="support-img" src="images/icon_diamond@2x.png" alt="Pixel Precise">
+                                    <p class="support-item-text">Pixel Precise</p>
+                                </div>
+                            </div>    
+                            <div class="row no-gutter"> 
+                                <div class="col-md-11 m-top-40 animate wait-03s">
+                                    Drawings me opinions returned absolute in. Otherwise therefore hex did are unfeeling something. Certain be ye amiable by exposed so. To celebrated estimating excellence do.
+                                </div>
+                            </div>
+                        </div>                                                                   
+                    </div>
+                </div>                                         
+            </div>
+        </div>
+
+        <!-- FOCUS SECTION -->
+        
+        <div id="focus" class="section" style="display: none;">                                
+            <div class="box-wrapper">                                                                                              
+                <div class="container-fluid">  
+                    <div class="row no-gutter"> 
+                        <div class="col-md-6">                            
+                            <img src="images/image_icons.jpg" alt="">                                           
+                        </div>
+                        <div class="col-md-6">
+                            <div class="focus-holder">
+                                <h2 class="entry-title">Focus and Photo by Professionals</h2>  
+                                <br>
+                                <br>
+                                <p>
+                                    We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills.
+                                </p>
+                                <br>
+                                <p>
+                                    We won’t be doing it just to get out there in space we’ll be doing it because the things we learn out there will be making life better for a lot of people.
+                                </p>
+                            </div>
+                        </div>                  
+                    </div>      
+                    <div class="row no-gutter"> 
+                        <div class="col-md-12">
+                            <script>
+                                var text1_speed = "500";
+                                var text1_auto = "false";
+                                var text1_hover = "true";
+                            </script>
+
+                            <div class="testimonial-slider-holder relative">
+                                <div class="testimonial-slider-quote">“</div>
+                                <div id="text1" class="testimonial-slider slider">
+                                    <div>
+                                        <div class="testimonial-content">
+                                            <p class="author-text">Imperdiet dui accumsan sit amet. Tempor id eu nisl nunc. Augue ut lectus arcu bibendum. Dignissim cras tincidunt lobortis feugiat vivamus.</p>
+                                            <img class="author-img" src="images/avatar_img_01@2x.png" alt=""/> 
+                                            <p class="author-name">Jane Williams</p>
+                                        </div>  
+                                    </div>
+                                    <div>
+                                        <div class="testimonial-content">
+                                            <p class="author-text">Bibendum at varius vel pharetra. Enim ut tellus elementum sagittis vitae et leo duis ut. Arcu odio ut sem nulla pharetra diam sit amet.</p>
+                                            <img class="author-img" src="images/avatar_img_02@2x.png" alt=""/> 
+                                            <p class="author-name">John Doe</p>
+                                        </div>   
+                                    </div>
+                                    <div>
+                                        <div class="testimonial-content">
+                                            <p class="author-text">Nec feugiat in fermentum posuere urna nec tincidunt praesent semper. Dictum fusce ut placerat orci. Leo in vitae turpis massa sed.</p>
+                                            <img class="author-img" src="images/avatar_img_03@2x.png" alt=""/> 
+                                            <p class="author-name">Anna Who</p>
+                                        </div> 
+                                    </div>      
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>                  
+            </div>                  
+        </div>                  
+
+
+        <!-- PRICING SECTION -->
+
+        <div id="pricing" class="section" style="display: none;">                                
+            <div class="box-wrapper">                                                                                              
+                <div class="container-fluid">
+                    <div class="content-980">
+                        <div class="row no-gutter"> 
+                            <div class="col-md-8 offset-md-2 pricing-intro">
+                                Pricing me opinions returned absolute in. Otherwise therefore hex did are unfeeling something. Certain be ye amiable by exposed so. To celebrated estimating excellence do.
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row no-gutter"> 
+                            <div class="col-md-4">  
+                                <div class="pricing-holder price1 animate">
+                                    <p class="pricing-title">
+                                        STARTER
+                                        <br>
+                                        PACK
+                                    </p>
+                                    <div class="pricing-content">
+                                        <p>Auctor neque in euismod</p>
+                                        <p>Sem erat nec nibh nulla</p>
+                                        <p>Magna est suspendisse sem</p>
+                                        <p><del>Viverra eget interdum nec</del></p>
+                                        <p><del>Dignissim ipsum nulla</del></p>
+                                        <p><del>Porta vestibulum nec</del></p>
+                                        <p><del>Auctor neque in euismod</del></p>
+                                        <p><del>Sem erat nec nibh nulla</del></p>
+                                    </div>
+                                    <p class="pricing-price"><span>$</span>29</p>
+                                    <a class="pricing-buy" href="single.html">BUY</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">  
+                                <div class="pricing-holder price2 animate wait-03s">
+                                    <p class="pricing-title">
+                                        BUSINESS
+                                        <br>
+                                        PACK
+                                    </p>
+                                    <div class="pricing-content">
+                                        <p>Auctor neque in euismod</p>
+                                        <p>Sem erat nec nibh nulla</p>
+                                        <p>Magna est suspendisse sem</p>
+                                        <p>Viverra eget interdum nec</p>
+                                        <p>Dignissim ipsum nulla</p>
+                                        <p><del>Porta vestibulum nec</del></p>
+                                        <p><del>Auctor neque in euismod</del></p>
+                                        <p><del>Sem erat nec nibh nulla</del></p>                                  
+                                    </div>
+                                    <p class="pricing-price"><span>$</span>49</p>
+                                    <a class="pricing-buy" href="single.html">BUY</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">  
+                                <div class="pricing-holder price3 animate wait-06s">
+                                    <p class="pricing-title">
+                                        PROFESSIONAL
+                                        <br>
+                                        PACK
+                                    </p>
+                                    <div class="pricing-content">
+                                        <p>Auctor neque in euismod</p>
+                                        <p>Sem erat nec nibh nulla</p>
+                                        <p>Magna est suspendisse sem</p>
+                                        <p>Viverra eget interdum nec</p>
+                                        <p>Dignissim ipsum nulla</p>
+                                        <p>Porta vestibulum nec</p>
+                                        <p>Auctor neque in euismod</p>
+                                        <p>Sem erat nec nibh nulla</p> 
+                                    </div>
+                                    <p class="pricing-price"><span>$</span>69</p>
+                                    <a class="pricing-buy" href="single.html">BUY</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- TEAM SECTION -->
+
+        <div id="team" class="section" style="display: none;">                                
+            <div class="box-wrapper">                                                                                              
+                <div class="container-fluid">                      
+                    <div class="row no-gutter"> 
+                        <div class="col-md-12">
+                            <img src="images/about_img_01.jpg" alt="Peter Johansen"/>
+                        </div>
+                        <div class="col-md-6 m-top-40">
+                            <div class="progress_bar animate">                         
+                                <div class="progress_bar_field_holder" style="width:81%;">  
+                                    <div class="progress_bar_title">HTML</div>    
+                                    <div class="progress_bar_percent_text">81%</div>                       
+                                    <div class="progress_bar_field_perecent"></div>    
+                                </div>              
+                            </div>
+                            <div class="progress_bar animate wait-03s">                         
+                                <div class="progress_bar_field_holder" style="width:93%;">  
+                                    <div class="progress_bar_title">CSS</div>    
+                                    <div class="progress_bar_percent_text">93%</div>                       
+                                    <div class="progress_bar_field_perecent"></div>    
+                                </div>              
+                            </div>
+                            <div class="progress_bar animate wait-06s">                         
+                                <div class="progress_bar_field_holder" style="width:72%;">  
+                                    <div class="progress_bar_title">PSD</div>    
+                                    <div class="progress_bar_percent_text">72%</div>                       
+                                    <div class="progress_bar_field_perecent"></div>    
+                                </div>              
+                            </div>
+                            <div class="progress_bar animate wait-09s">                         
+                                <div class="progress_bar_field_holder" style="width:99%;">  
+                                    <div class="progress_bar_title">LOVE</div>    
+                                    <div class="progress_bar_percent_text">99%</div>                       
+                                    <div class="progress_bar_field_perecent"></div>    
+                                </div>              
+                            </div>
+                        </div>                         
+                        <div class="col-md-6 team-member featured animate">
+                            <div class="member-wrapper">
+                                <h4 class="member-name">Peter Johanson</h4>
+                                <p class="member-position">CEO</p>                            
+                                <div class="member-content">
+                                    <p>
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.
+                                    </p>
+                                    <br>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    </p>
+                                </div>                      
+                            </div>
+                        </div>                         
+                        <div class="col-sm-6 col-md-6 team-member">                            
+                            <img src="images/about_img_02.jpg" alt="John Willson" />
+                            <div class="member-wrapper">
+                                <h4 class="member-name">John Willson</h4>
+                                <p class="member-position">CODER</p>                            
+                                <div class="member-content">
+                                    <p>
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.
+                                    </p>
+                                </div>        
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 team-member member-3">                            
+                            <img src="images/about_img_03.jpg" alt="Molly Chen" />
+                            <div class="member-wrapper">
+                                <h4 class="member-name">Molly Chen</h4>
+                                <p class="member-position">DESIGNER</p>                            
+                                <div class="member-content">
+                                    <p>
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.
+                                    </p>
+                                </div>        
+                            </div>
+                        </div>
+                    </div>                                         
+                </div>
+            </div>
+        </div>
+
+
+        <!-- CONTACT SECTION -->
+
+        <div id="contact" class="section" style="display: none;">                                
+            <div class="box-wrapper">                                                                                              
+                <div class="container-fluid"> 
+                    <div class="row no-gutter" style="display: none;">                        
+                        <div class="col-md-12">
+                            <ul class="counter-widget">
+                                <li class="animate">
+                                    <p class="count">739</p>
+                                    <span>CUPS OF COFFEE</span>
+                                </li>
+                                <li class="animate wait-03s">
+                                    <p class="count">540</p>
+                                    <span>TB USED</span>
+                                </li>
+                                <li class="animate wait-06s">
+                                    <p class="count">6217</p>
+                                    <span>CALLS MADE</span>
+                                </li>
+                                <li class="animate wait-09s">
+                                    <p class="count">1183</p>
+                                    <span>TWEETS</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row no-gutter"> 
+                        <div class="col-sm-6 col-md-6 contact-info">
+                            <p>
+                                Consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est adipisicing elit, sed do eiusmod tempor.
+                            </p>
+                            <br>
+                            <p><b>Address:</b> New York, NY, United States</p>
+                            <p><b>Phone:</b> +1 234-567-890</p>
+                            <p><b>Hours:</b> 9:00 am – 5:00 pm</p>
+                        </div>                        
+                        <div class="col-sm-6 col-md-6 contact-form-holder">
+                            <div class="contact-form">
+                                <p><input id="name" type="text" name="your-name" placeholder="Name"></p>
+                                <p><input id="contact-email" type="email" name="your-email" placeholder="Email"></p>
+                                <p><input id="subject" type="text" name="your-subject" placeholder="Subject"></p>
+                                <p><textarea id="message" name="your-message" placeholder="Message"></textarea></p>
+                                <p><input type="submit" value="SEND"></p>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>                                         
+            </div>                  
+        </div>
+
+        <!-- Footer -->
+
+        <footer>
+            <div class="footer box-wrapper">	
+                <div class="container-fluid">  
+                    <div class="row no-gutter"> 
+                        <!-- <div class="col-md-12 text-center">
+                            <div class="footer-text">Hey, you can connect with us via major social network sites. Click on the logo below.</div>
+                            <div class="social-footer">                
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="fa fa-behance"></span></a>
+                                <a href="#"><span class="fa fa-dribbble"></span></a>
+                                <a href="#"><span class="fa fa-facebook"></span></a>
+                                <a href="#"><span class="fa fa-rss"></span></a>            
+                            </div>                            
+                            <div class="copyright">© 2017 All Rights Reserved. - <a href="http://cocobasic.com">CocoBasic</a>.</div>
+                        </div> -->
+                        <div class="container">
+                            <div class="row">   
+                                <div class="col-lg-3 col-md-6 logo_footer">
+                                    <div class="footer-wiget" style="visibility: visible;">
+                                        <div class="footer-wiget-log">
+                                            <a href="#">
+                                                <img src="images/logo_negativo.png" style="width: 50%;margin-left: 25%;">
+                                            </a>
+                                        </div>
+                                        <div class="footer-wiget-text">
+                                            <p></p>
+                                        </div>
+                                        <!-- <div class="footer-wiget-social">
+                                            <ul>
+                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            </ul>
+                                        </div> -->
+                                    </div>
+                                </div>                             
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="footer-wiget " style="visibility: visible;">
+                                        <div class="footer-wiget-title">
+                                            <h4>CONTACT</h4>
+                                        </div>
+                                        <div class="footer-wiget-menu">
+                                            <ul>
+                                                <li> (888) 774-6498</li>
+                                                <li> info@brockmlc.com </li>
+                                                <li> PO Box 598 </li>
+                                                <li> Barnardsville, NC 28709 USA </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="footer-wiget " style="visibility: visible;">
+                                        <div class="footer-wiget-title">
+                                            <h4>USEFUL LINKS</h4>
+                                        </div>
+                                        <div class="footer-wiget-menu">
+                                            <ul>
+                                                <li><a target="_blank" href="https://brockmlc.com"><i class="bi bi-chevron-double-right"></i> BMLC </a></li>
+                    
+                                                <li><a target="_blank" href="https://brockmountainhomes.com/"> <i class="bi bi-chevron-double-right"></i> BM HOMES</a></li>
+                                                <!-- <li><a target="_blank" href="https://brockmlc.com/career_opportunities" > <i class="bi bi-chevron-double-right"></i> Career Opportunities</a></li> -->
+                                                <li><a target="_blank" href="https://brockmountainhomes.com/"><i class="bi bi-chevron-double-right"></i> BM FEDERAL </a></li>                                               
+                                            </ul>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-start">
+                                    <div class="foter-box">
+                                        <!-- <div class="footer-wiget-title" id="social-tittle">
+                                            <h4>Connect With Us</h4>
+                                        </div>
+                                        <div class="footer-wiget-social">
+                                            <ul>
+                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                                <li><a href="https://www.facebook.com/brockmlc/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="mailto:info@brockmlc.com"><i class="fas fa-envelope"></i></a></li>
+                                            </ul>
+                                        </div> -->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-sm-4">
+                                                <div class="footer-recent-thumb">
+                                                    <img src="images/SAFETY SEAL (2).png" alt="">
+                                                </div>
+                                            </div>
+                                            <!-- <div class="col-lg-4 col-sm-4">
+                                                <div class="footer-recent-thumb">
+                                                    <img src="images/logo_negativo.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-4">
+                                                <div class="footer-recent-thumb">
+                                                    <img src="images/logo_negativo.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-4">
+                                                <div class="footer-recent-thumb">
+                                                    <img src="images/logo_negativo.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-4">
+                                                <div class="footer-recent-thumb">
+                                                    <img src="images/logo_negativo.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-4">
+                                                <div class="footer-recent-thumb">
+                                                    <img src="images/logo_negativo.png" alt="">
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="copyright-text">
+                                        <p>Brock MLC - Copyright © 2024 All Rights Reserved.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+	<script type='text/javascript' src="js/jquery.min.js"></script>  
+        <script type='text/javascript' src="js/bootstrap.min.js"></script>
+        <script type='text/javascript' src='js/jquery.smartmenus.min.js'></script>
+        <script type='text/javascript' src='js/jquery.sticky.js'></script>
+        <script type='text/javascript' src='js/jquery.onePageMenu.js'></script>        
+        <script type='text/javascript' src='js/isotope.pkgd.js'></script>        
+        <script type='text/javascript' src='js/slick.min.js'></script>       
+        <script type='text/javascript' src='js/imagesloaded.pkgd.js'></script>
+        <script type='text/javascript' src='js/jquery.prettyPhoto.js'></script>
+        <script type='text/javascript' src='js/main.js'></script>
+    </body>
+</html>
