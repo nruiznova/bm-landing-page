@@ -80,95 +80,7 @@
                 z-index: 999;
                 font-size: 22px;
                 margin-left: 13px;
-            }
-
-            .tp-project-item:hover{
-
-                .tp-project-box {
-                    border-color: #78ad3c;
-                }  
-               .tp-project-thumb::before {
-                    opacity: 1;
-                    visibility: visible;
-                }
-
-               /* .tp-project-content {
-                    background-color: #78ad3c;
-                } */
-
-               .tp-project-icon a {
-                    color: #2b5c3f;
-                }
-
-               .tp-project-icon a i {
-                    color: #2b5c3f;                                        
-                }
-                .tp-project-icon a::before {
-                        background-color: #78ad3c;
-                    }
-
-               .tp-project-box {
-                    border-color: #78ad3c;
-                }   
-                
-                .tp-project-item{
-                    overflow: hidden;        
-                }     
-                
-                .tp-project-item{
-                    overflow: hidden;        
-                }
-                
-                .tp-project-item::before {
-                    position: absolute;
-                    content: "";
-                    width: 100%;
-                    height: 100%;
-                    top: 0;
-                    left: 0;
-                    opacity: .80;
-                    background-image: -moz-linear-gradient(90deg, rgb(202, 31, 38) 0%, rgb(229, 111, 52) 54%, rgb(255, 191, 66) 100%);
-                    background-image: -webkit-linear-gradient(90deg, rgb(202, 31, 38) 0%, rgb(229, 111, 52) 54%, rgb(255, 191, 66) 100%);
-                    background-image: -ms-linear-gradient(90deg, rgb(202, 31, 38) 0%, rgb(229, 111, 52) 54%, rgb(255, 191, 66) 100%);
-                    -webkit-transform: perspective(400px) rotateX(90deg) scaleY(0.5);
-                    -ms-transform: perspective(400px) rotateX(90deg) scaleY(0.5);
-                    transform: perspective(400px) rotateX(90deg) scaleY(0.5);
-                    -webkit-transform-origin: center;
-                    -ms-transform-origin: center;
-                    transform-origin: center;
-                    transition-delay: 0.1s;
-                    transition-timing-function: ease-in-out;
-                    transition-duration: 0.4s;
-                    transition-property: all;
-                    z-index: 2;
-                }
-
-                .tp-project-item::after {
-                    content: '';
-                    position: absolute;
-                    background: linear-gradient(to top, #3a3a4a, transparent);
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 70%;
-                    z-index: 1;
-                }
-
-            }               
-           
-            .tp-project-thumb::before {
-                position: absolute;
-                left: 0;
-                top: 0;
-                height: 100%;
-                width: 100%;
-                background: linear-gradient(to top, #2b5c3f, transparent);
-                content: "";
-                border-radius: 5px;
-                opacity: 0;
-                visibility: hidden;
-                transition: .4s;
-            }
+            }            
 
             .tp-project-content{
                 display: flex; 
@@ -194,6 +106,33 @@
                 width: 80px; 
                 margin-right: 10px;                              
             }
+
+            .tp-project-thumb{
+                height: 600px !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .tp-project-thumb img{
+                width: 70% !important;
+                height: auto;
+            }
+
+            #tp-project-thumb1{
+                background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(images/img_4234.jpg); 
+                /* padding: 60px; */
+            }           
+
+            #tp-project-thumb2{
+                background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(images/img_4190.jpg); 
+                /* padding: 60px; */
+            }
+
+            #tp-project-thumb3{
+                background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(images/img_4567.jpg); 
+                /* padding: 70px; */
+            }
             
         </style>
 
@@ -203,24 +142,24 @@
         </div>
 
         <!-- Menu -->
-        <div class="menu-wrapper center-relative">	
+        <div class="menu-wrapper center-relative d-flex justify-content-center align-items-center" style="height: 104px;">	
             <nav id="header-main-menu">
                 <img class="menu-logo" src="images/logo_negativo.png" alt="Bacchus">
-                <div class="mob-menu">MENU</div>
-                <ul class="main-menu sm sm-clean">
+                <!-- <div class="mob-menu">MENU</div> -->
+                <!-- <ul class="main-menu sm sm-clean">
                     <li><a target="_blank" href="https://brockmlc.com/">BMLC</a></li>
                     <li><a target="_blank" href="https://brockmountainhomes.com/">BM Homes</a></li>
                     <li><a href="#">BM Federal</a></li>
-                    <!-- <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li> -->
-                    <!-- <li><a href="#portfolio">Portfolio</a></li>                    
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>                    
                     <li><a href="#news">News</a></li>  
                     <li><a href="#support">Support</a></li>
                     <li><a href="#focus">Focus</a></li>
                     <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#team">Team</a></li> -->
-                    <!-- <li><a href="#contact">Contact</a></li>-->
-                </ul>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul> -->
             </nav>            
         </div>    
 
@@ -266,81 +205,87 @@
                     <div class="grid-sizer"></div>                                              
                     <!-- <div class="container-fluid">  
                         <div class="row no-gutter">  -->
-                           <div class="grid-item element-item p_1x1" style="border-right: 4px solid white;">
-                            <div class="tp-project-item p-relative">
-                                <div class="tp-project-thumb ">
-                                   <img class="w-100" src="images/bmlc_banner.jpg" alt="">
-                                </div>
-                                <div class="tp-project-box">
-                                   <div class="tp-project-content">
-                                    <div class="project-logo">
-                                        <img id="img1" src="images/Logo BMLC s.png">
+                            <a target="_blank" href="https://brockmlc.com/">
+                                <div class="grid-item element-item p_1x1" id="grid-item-1" >
+                                    <div class="tp-project-item ">
+                                        <div class="tp-project-thumb" id="tp-project-thumb1"> 
+                                        <img class="w-100" src="images/Alt Logo neg (1).png" style="width: 90% !important" alt="">
+                                        </div>
+                                        <!-- <div class="tp-project-box">
+                                        <div class="tp-project-content">
+                                            <div class="project-logo">
+                                                <img id="img1" src="images/Logo BMLC s.png">
+                                            </div>
+                                            <div class="tp-project-info">                                         
+                                                <h4 class="tp-project-titile-1">                                            
+                                                    <a target="_blank" href="https://brockmlc.com/">BMLC</a>
+                                                </h4>
+                                                <span id="span1">WEBSITE</span>
+                                            </div>
+                                        </div>
+                                        <div class="tp-project-icon">
+                                            <a target="_blank" href="https://brockmlc.com/">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                        </div> -->
                                     </div>
-                                      <div class="tp-project-info">                                         
-                                         <h4 class="tp-project-titile-1">                                            
-                                            <a target="_blank" href="https://brockmlc.com/">BMLC</a>
-                                        </h4>
-                                         <span id="span1">WEBSITE</span>
-                                      </div>
-                                   </div>
-                                   <div class="tp-project-icon">
-                                      <a target="_blank" href="https://brockmlc.com/">
-                                        <i class="fa fa-arrow-right"></i>
-                                      </a>
-                                   </div>
                                 </div>
-                             </div>
-                           </div>
-                           <div class="grid-item element-item p_1x1" style="border-right: 2px solid white; border-left: 2px solid white;">
-                            <div class="tp-project-item p-relative">
-                                <div class="tp-project-thumb ">
-                                   <img class="w-100" src="images/homes_banner.jpg" alt="">
-                                </div>
-                                <div class="tp-project-box">
-                                   <div class="tp-project-content">
-                                        <div class="project-logo">
-                                            <img id="img2" src="images/Logo BM Homes POSITIVE.png">
+                            </a>
+                            <a target="_blank" href="https://brockmlc.com/">
+                                <div class="grid-item element-item p_1x1" id="grid-item-2" >
+                                    <div class="tp-project-item ">
+                                        <div class="tp-project-thumb" id="tp-project-thumb2" >
+                                        <img class="w-100" src="images/Logo_neg_complete.png" alt="">
                                         </div>
-                                        <div class="tp-project-info">                                         
-                                            <h4 class="tp-project-titile-1">                                               
-                                                <a target="_blank" href="https://brockmountainhomes.com/" >BM HOMES</a>
-                                            </h4>
-                                            <span id="span2">WEBSITE</span>
+                                        <!-- <div class="tp-project-box">
+                                        <div class="tp-project-content">
+                                                <div class="project-logo">
+                                                    <img id="img2" src="images/Logo BM Homes POSITIVE.png">
+                                                </div>
+                                                <div class="tp-project-info">                                         
+                                                    <h4 class="tp-project-titile-1">                                               
+                                                        <a target="_blank" href="https://brockmountainhomes.com/" >BM HOMES</a>
+                                                    </h4>
+                                                    <span id="span2">WEBSITE</span>
+                                                </div>
                                         </div>
-                                   </div>
-                                   <div class="tp-project-icon">
-                                      <a target="_blank" href="https://brockmountainhomes.com/">
-                                        <i class="fa fa-arrow-right"></i>
-                                      </a>
-                                   </div>
-                                </div>
-                             </div>
-                           </div>
-                           <div class="grid-item element-item p_1x1" style="border-left: 4px solid white;">
-                            <div class="tp-project-item p-relative">
-                                <div class="tp-project-thumb ">
-                                   <img class="w-100" src="images/federal_banner.jpg" alt="">
-                                </div>
-                                <div class="tp-project-box">
-                                   <div class="tp-project-content">
-                                        <div class="project-logo">
-                                            <img id="img3" src="images/Alt Logo.png">
+                                        <div class="tp-project-icon">
+                                            <a target="_blank" href="https://brockmountainhomes.com/">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
                                         </div>
-                                        <div class="tp-project-info ">                                         
-                                            <h4 class="tp-project-titile-1">                                            
-                                                <a target="_blank" href="https://brockmountainhomes.com/">BM FEDERAL</a>
-                                            </h4>
-                                            <span id="span3">WEBSITE</span>
-                                        </div>
-                                   </div>
-                                   <div class="tp-project-icon">
-                                      <a target="_blank" href="https://brockmountainhomes.com/">
-                                        <i class="fa fa-arrow-right"></i>
-                                      </a>
-                                   </div>
+                                        </div> -->
+                                    </div>
                                 </div>
-                             </div>
-                           </div>
+                            </a>
+                            <a target="_blank" href="https://brockmountainhomes.com/">
+                                <div class="grid-item element-item p_1x1" id="grid-item-3" >
+                                    <div class="tp-project-item ">
+                                        <div class="tp-project-thumb" id="tp-project-thumb3">
+                                        <img class="w-100" src="images/bm_home_neg.png" alt="">
+                                        </div>
+                                        <!-- <div class="tp-project-box">
+                                        <div class="tp-project-content">
+                                                <div class="project-logo">
+                                                    <img id="img3" src="images/Alt Logo.png">
+                                                </div>
+                                                <div class="tp-project-info ">                                         
+                                                    <h4 class="tp-project-titile-1">                                            
+                                                        <a target="_blank" href="https://brockmountainhomes.com/">BM FEDERAL</a>
+                                                    </h4>
+                                                    <span id="span3">WEBSITE</span>
+                                                </div>
+                                        </div>
+                                        <div class="tp-project-icon">
+                                            <a target="_blank" href="https://brockmountainhomes.com/">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </a>
                         <!-- </div>
                     </div>                                           -->
                 </div>
